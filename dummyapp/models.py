@@ -16,3 +16,8 @@ def newfunc():
     varNew = cursor.fetchall()
     return varNew
 
+def newfuncDelete():
+    cursor = conn.cursor()
+    cursor.execute('delete * from TestDBTable ')
+    varNewOne = cursor.fetchall()
+    return varNewOne
