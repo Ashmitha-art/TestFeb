@@ -5,5 +5,6 @@ from .views import *
 app_name='someapp'
 
 urlpatterns = [
-    re_path('^$', someview, name='someview')
+    re_path('^$', someview, name='someview'),
+    re_path('^$', someviewNew, name='someviewNew'),
 ]
