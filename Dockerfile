@@ -11,6 +11,7 @@ RUN pip install -r requirements.txt --no-cache-dir
 
 
 #CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
-
+CMD sudo apt install npm
+CMD npm --version
 
 CMD ["gunicorn", "TestFeb.wsgi:application", "--bind", "0.0.0.0:8000", "--timeout", "90"]
